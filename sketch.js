@@ -13,7 +13,7 @@ var randYPos4;
 function preload() {
   face1 = loadImage("images/tyler.jpg");
   face2 = loadImage("images/tyler-2.jpg");
-  face3 = loadImage("images/tyler-3.png");
+  face3 = loadImage("images/tyler-3.jpg");
   face4 = loadImage("images/tyler-4.jpg");
 }
 
