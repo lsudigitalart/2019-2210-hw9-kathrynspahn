@@ -50,14 +50,14 @@ function draw() {
   tyler4.display();
 
   let t = 'WHICH TYLER IS THE FASTEST?';
-fill(255);
+fill(0,200,200);
 text(t, 150, 150); 
 
 }
 
 function Meme(pic,tempSize, tempY, tempX,tempSpeed) {
   this.pic = pic;
-  this.size = tempSize;
+  this.size = tempSize/3;
   //this.colorR = tempColorR;
   this.yPos = tempY;
   this.xPos = tempX;
@@ -74,24 +74,9 @@ function Meme(pic,tempSize, tempY, tempX,tempSpeed) {
   }
 
   this.display = function () {
-    //var pic = [face1,face2,face3,face4];
 
     image(pic,this.size * 0.5 + this.xPos,randYPos1);
-    //image(face2,this.size * 0.5 + this.xPos,randYPos2);
-    //image(face3,this.size * 0.5 + this.xPos,randYPos3);
-    //image(face4,this.size * 0.5 + this.xPos,randYPos4);
+
     
   }
- /* this.interact = function()
-  {
-      if (keyIsPressed === true)
-      {
-        accel += 1;
-        this.accel = accel;
-      }
-  }*/
-
-
-  
-
 }
