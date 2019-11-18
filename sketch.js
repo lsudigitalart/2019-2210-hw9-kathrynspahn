@@ -1,7 +1,7 @@
-var myMeme1;
-var myMeme2;
-var myMeme3;
-var myMeme4;
+var tyler1;
+var tyler2;
+var tyler3;
+var tyler4;
 var face1, face2, face3, face4;
 //var pic;
 
@@ -25,31 +25,33 @@ function setup() {
   randYPos3 = random(height);
   randYPos4 = random(height);
 
-  myMeme1 = new Meme(face1,5, randYPos1, 0, 2);
-  myMeme2 = new Meme(face2,5,randYPos2, 0, 5);
-  myMeme3 = new Meme(face3,5, randYPos3, 0, 10);
-  myMeme4 = new Meme(face4,5, randYPos4, 0, 3);
+
+
+  tyler1 = new Meme(face1,1, randYPos1, 0, 2);
+  tyler2 = new Meme(face2,1,randYPos2, 0, 5);
+  tyler3 = new Meme(face3,1, randYPos3, 0, 10);
+  tyler4 = new Meme(face4,1, randYPos4, 0, 3);
 
 }
 
 function draw() {
   background(0);
 
-  myMeme1.update();
-  myMeme1.display();
+  tyler1.update();
+  tyler1.display();
 
-  myMeme2.update();
-  myMeme2.display();
+  tyler2.update();
+  tyler2.display();
 
-  myMeme3.update();
-  myMeme3.display();
+  tyler3.update();
+  tyler3.display();
 
-  myMeme4.update();
-  myMeme4.display();
+  tyler4.update();
+  tyler4.display();
 
   let t = 'WHICH TYLER IS THE FASTEST?';
 fill(255);
-text(t, 400,400); 
+text(t, 150, 150); 
 
 }
 
