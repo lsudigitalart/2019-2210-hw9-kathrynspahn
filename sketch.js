@@ -36,32 +36,35 @@ function setup() {
 
 function draw() {
   background(0);
-
+  
+  scale(.5)
   tyler1.update();
   tyler1.display();
 
+  scale(.4)
   tyler2.update();
   tyler2.display();
 
+  scale(.3)
   tyler3.update();
   tyler3.display();
 
+  scale(10)
   tyler4.update();
   tyler4.display();
 
+  scale(4)
   let t = 'WHICH TYLER IS THE FASTEST?';
-fill(0,200,200);
-text(t, 150, 150); 
+fill(0,255,0);
+text(t, 10, 20); 
 
 }
 
 function Meme(pic,tempSize, tempY, tempX,tempSpeed) {
   this.pic = pic;
-  this.size = tempSize/3;
-  //this.colorR = tempColorR;
+  this.size = tempSize;
   this.yPos = tempY;
   this.xPos = tempX;
-  //this.accel = accel;
   this.speed = tempSpeed;
 
   this.update = function () {
